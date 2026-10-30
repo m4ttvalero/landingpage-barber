@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BLACKSTEEL Barber Club — Seu estilo começa aqui</title>
+    <meta
+      name="description"
+      content="BLACKSTEEL Barber Club: cortes, barba e acabamento com precisão e atenção aos detalhes. Projeto demonstrativo desenvolvido pela Studio MV."
+    />
+    <meta name="theme-color" content="#0a0a0b" />
+    <meta property="og:title" content="BLACKSTEEL Barber Club" />
+    <meta
+      property="og:description"
+      content="Seu estilo começa aqui. Cortes, barba e acabamento com precisão."
+    />
+    <meta property="og:type" content="website" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230a0a0b'/%3E%3Cpath d='M18 14h18a10 10 0 0 1 4 19 11 11 0 0 1-4 17H18z' fill='none' stroke='%23b8975a' stroke-width='4' stroke-linejoin='round'/%3E%3C/svg%3E"
+    />
+
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <!-- CABEÇALHO -->
+    <header class="site-header" id="topo">
+      <div class="container header-inner">
+        <a
+          href="#inicio"
+          class="logo"
+          aria-label="BLACKSTEEL Barber Club — início"
+        >
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="30" height="30">
+              <path
+                d="M8 5h9a5 5 0 0 1 2 9.5A5.5 5.5 0 0 1 17 27H8z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linejoin="round"
+              />
+              <path d="M8 14.5h10" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span class="logo-text">BLACK<b>STEEL</b></span>
+        </a>
+
+        <nav class="main-nav" id="menu" aria-label="Navegação principal">
+          <ul>
+            <li><a href="#inicio" data-nav>Início</a></li>
+            <li><a href="#servicos" data-nav>Serviços</a></li>
+            <li><a href="#profissionais" data-nav>Profissionais</a></li>
+            <li><a href="#galeria" data-nav>Galeria</a></li>
+            <li><a href="#contato" data-nav>Contato</a></li>
+          </ul>
+          <a href="#agendar" class="btn btn-gold btn-sm nav-cta"
+            >Agendar horário</a
+          >
+        </nav>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu"
+          aria-label="Abrir menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <!-- HERO -->
+      <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+        <div class="hero-media">
+          <div class="hero-media-svg" aria-label="Composição abstrata temática de barbearia">
+            <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%;display:block;">
+              <defs>
+                <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#0a0a0b" />
+                  <stop offset="50%" stop-color="#17181b" />
+                  <stop offset="100%" stop-color="#0a0a0b" />
+                </linearGradient>
+                <radialGradient id="goldGlow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#b8975a" stop-opacity="0.35" />
+                  <stop offset="100%" stop-color="#b8975a" stop-opacity="0" />
+                </radialGradient>
+              </defs>
+              <!-- Fundo grafite com gradiente -->
+              <rect width="800" height="600" fill="url(#heroGrad)" />
+              <!-- Brilho dourado central -->
+              <circle cx="400" cy="300" r="220" fill="url(#goldGlow)" />
+              <!-- Padrão geométrico: linhas finas douradas -->
+              <g stroke="#b8975a" stroke-width="1" opacity="0.25">
+                <line x1="40" y1="60" x2="760" y2="60" />
+                <line x1="40" y1="540" x2="760" y2="540" />
+                <line x1="60" y1="40" x2="60" y2="560" />
+                <line x1="740" y1="40" x2="740" y2="560" />
+                <line x1="120" y1="120" x2="680" y2="120" />
+                <line x1="120" y1="480" x2="680" y2="480" />
+              </g>
+              <!-- Silhueta de cadeira de barbeiro (estilo lineto) -->
+              <g fill="none" stroke="#b8975a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.55">
+                <path d="M260 200h80v140h-80z" />
+                <path d="M260 200l-30 60M340 200l30 60" />
+                <path d="M260 340h80" />
+                <circle cx="300" cy="380" r="18" fill="none" stroke="#b8975a" stroke-width="4" />
+              </g>
+              <!-- Tesoura cruzada -->
+              <g fill="none" stroke="#b8975a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0.7" transform="translate(560, 380) rotate(-25)">
+                <path d="M0 0l-45-45M0 0l-25-55" />
+                <path d="M-45-45l-10 10M-25-55l-10 10" />
+                <circle cx="-45" cy="-45" r="4" fill="#b8975a" />
+              </g>
+              <!-- Navalha -->
+              <g fill="none" stroke="#b8975a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.6" transform="translate(140, 420) rotate(15)">
+                <path d="M0 0l35-8M0 0l10-30M35-8l10-30" />
+                <path d="M45-38l-8 30" />
+              </g>
+              <!-- Pente -->
+              <g fill="none" stroke="#b8975a" stroke-width="3" stroke-linecap="round" opacity="0.5" transform="translate(620, 180) rotate(-10)">
+                <path d="M0 0l-12-40M-12-40l-8 40" />
+                <path d="M0 0l-8 0M-6 -8l-8 0M-6 -16l-8 0M-6 -24l-8 0" />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="container hero-inner">
+          <p class="eyebrow reveal">Barber Club · Estilo · Precisão</p>
+          <h1 id="hero-titulo" class="hero-title reveal">
+            Seu estilo<br />começa <em>aqui.</em>
+          </h1>
+          <p class="hero-text reveal">
+            Na BLACKSTEEL, cada corte é feito com calma, técnica e atenção aos
+            detalhes — num ambiente pensado para você se sentir bem desde a
+            chegada.
+          </p>
+          <div class="hero-actions reveal">
+            <a href="#agendar" class="btn btn-gold">Agendar horário</a>
+            <a href="#servicos" class="btn btn-ghost">Conhecer serviços</a>
+          </div>
+        </div>
+
+        <p class="hero-side" aria-hidden="true">
+          BLACKSTEEL · BARBER CLUB · PROJETO DEMONSTRATIVO
+        </p>
+        <a
+          class="hero-scroll"
+          href="#sobre"
+          aria-label="Rolar para a próxima seção"
+          ><span></span
+        ></a>
+      </section>
+
+      <!-- FAIXA -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Corte</span><i></i><span>Degradê</span><i></i><span>Barba</span
+          ><i></i><span>Navalha</span><i></i><span>Acabamento</span><i></i
+          ><span>Sobrancelha</span><i></i> <span>Corte</span><i></i
+          ><span>Degradê</span><i></i><span>Barba</span><i></i
+          ><span>Navalha</span><i></i><span>Acabamento</span><i></i
+          ><span>Sobrancelha</span><i></i>
+        </div>
+      </div>
+
+      <!-- SOBRE -->
+      <section class="section about" id="sobre" aria-labelledby="sobre-titulo">
+        <div class="container about-grid">
+          <div class="about-media reveal" aria-label="Ilustração abstrata temática de barbearia">
+            <svg viewBox="0 0 450 600" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%;display:block;">
+              <defs>
+                <linearGradient id="aboutGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#0a0a0b" />
+                  <stop offset="100%" stop-color="#17181b" />
+                </linearGradient>
+                <radialGradient id="aboutGlow" cx="60%" cy="40%" r="50%">
+                  <stop offset="0%" stop-color="#b8975a" stop-opacity="0.3" />
+                  <stop offset="100%" stop-color="#b8975a" stop-opacity="0" />
+                </radialGradient>
+              </defs>
+              <rect width="450" height="600" fill="url(#aboutGrad)" />
+              <circle cx="270" cy="240" r="180" fill="url(#aboutGlow)" />
+              <!-- Padrão geométrico -->
+              <g stroke="#b8975a" stroke-width="1" opacity="0.2">
+                <line x1="30" y1="40" x2="420" y2="40" />
+                <line x1="30" y1="560" x2="420" y2="560" />
+                <line x1="40" y1="60" x2="40" y2="540" />
+                <line x1="410" y1="60" x2="410" y2="540" />
+                <line x1="90" y1="140" x2="360" y2="140" />
+                <line x1="90" y1="460" x2="360" y2="460" />
+              </g>
+              <!-- Cadeira de barbeiro estilizada -->
+              <g fill="none" stroke="#b8975a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5">
+                <path d="M180 220h90v160h-90z" />
+                <path d="M180 220l-20 50M270 220l20 50" />
+                <path d="M180 380h90" />
+                <circle cx="225" cy="420" r="14" fill="none" stroke="#b8975a" stroke-width="3" />
+              </g>
+              <!-- Tesoura -->
+              <g fill="none" stroke="#b8975a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.65" transform="translate(340, 340) rotate(-20)">
+                <path d="M0 0l-35-35M0 0l-20-45" />
+                <path d="M-35-35l-8 8M-20-45l-8 8" />
+                <circle cx="-35" cy="-35" r="3" fill="#b8975a" />
+              </g>
+              <!-- Navalha -->
+              <g fill="none" stroke="#b8975a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.5" transform="translate(100, 460) rotate(12)">
+                <path d="M0 0l28-6M0 0l8-24M28-6l8-24" />
+                <path d="M36-30l-6 24" />
+              </g>
+            </svg>
+          <span class="about-tag" aria-hidden="true"
+            >Estilo<br />Precisão<br />Experiência</span
+          >
+          </div>
+
+          <div class="about-copy">
+            <p class="eyebrow reveal">
+              <span class="eyebrow-num">01</span> A barbearia
+            </p>
+            <h2 id="sobre-titulo" class="section-title reveal">
+              Um espaço feito para o <em>homem de estilo</em>
+            </h2>
+            <p class="reveal">
+              A BLACKSTEEL nasceu da ideia de que ir à barbearia pode ser mais
+              do que “dar um jeito no cabelo”. É uma pausa na rotina, um momento
+              para cuidar da aparência com técnica e sem pressa.
+            </p>
+            <p class="reveal">
+              Trabalhamos com linhas limpas, acabamento cuidadoso e conversa
+              franca: antes de começar, entendemos o que você procura e
+              sugerimos o que funciona para o seu rosto, seu cabelo e sua
+              rotina.
+            </p>
+            <ul class="about-list reveal">
+              <li>
+                <strong>Estilo</strong
+                ><span>Do clássico ao moderno, com referências atuais.</span>
+              </li>
+              <li>
+                <strong>Precisão</strong
+                ><span
+                  >Linhas, transições e contornos executados com método.</span
+                >
+              </li>
+              <li>
+                <strong>Experiência</strong
+                ><span
+                  >Ambiente confortável, do primeiro ao último minuto.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVIÇOS -->
+      <section
+        class="section services"
+        id="servicos"
+        aria-labelledby="servicos-titulo"
+      >
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow">
+              <span class="eyebrow-num">02</span> Serviços e preços
+            </p>
+            <h2 id="servicos-titulo" class="section-title">
+              O que fazemos <em>por você</em>
+            </h2>
+            <p class="section-sub">
+              Valores e durações ilustrativos, por se tratar de um projeto
+              demonstrativo.
+            </p>
+          </header>
+
+          <div
+            class="filters reveal"
+            role="group"
+            aria-label="Filtrar serviços"
+            id="service-filters"
+          ></div>
+          <div class="service-grid" id="service-grid"></div>
+          <p class="note">
+            * Preços fictícios, editáveis em <code>script.js</code> (lista
+            <code>SERVICES</code>).
+          </p>
+        </div>
+      </section>
+
+      <!-- PROFISSIONAIS -->
+      <section
+        class="section team"
+        id="profissionais"
+        aria-labelledby="pro-titulo"
+      >
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow">
+              <span class="eyebrow-num">03</span> Profissionais
+            </p>
+            <h2 id="pro-titulo" class="section-title">
+              Quem cuida do <em>seu visual</em>
+            </h2>
+            <p class="section-sub">
+              Barbeiros fictícios, criados para este projeto de portfólio.
+            </p>
+          </header>
+          <div class="team-grid" id="team-grid"></div>
+        </div>
+      </section>
+
+      <!-- AGENDAMENTO -->
+      <section
+        class="section booking"
+        id="agendar"
+        aria-labelledby="agendar-titulo"
+      >
+        <div class="container booking-grid">
+          <div class="booking-intro reveal">
+            <p class="eyebrow">
+              <span class="eyebrow-num">04</span> Agendamento
+            </p>
+            <h2 id="agendar-titulo" class="section-title">
+              Reserve o seu <em>horário</em>
+            </h2>
+            <p>
+              Escolha o serviço, o profissional, a data e o horário que prefere.
+              Ao enviar, abrimos o WhatsApp com a mensagem pronta para a
+              barbearia.
+            </p>
+            <div class="callout" role="note">
+              <strong>Como funciona</strong>
+              <p>
+                Este é um <b>pedido de horário</b>. Como o site não tem sistema
+                de agenda, a disponibilidade
+                <b>não é verificada automaticamente</b> — o horário só é válido
+                depois da confirmação da barbearia pelo WhatsApp.
+              </p>
+            </div>
+          </div>
+
+          <form class="booking-form reveal" id="booking-form" novalidate>
+            <div class="field">
+              <label for="bk-name">Seu nome</label>
+              <input
+                type="text"
+                id="bk-name"
+                name="name"
+                autocomplete="name"
+                placeholder="Como devemos te chamar?"
+                maxlength="60"
+                required
+              />
+              <p class="error" id="err-name" role="alert"></p>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="bk-service">Serviço</label>
+                <select id="bk-service" name="service" required></select>
+                <p class="error" id="err-service" role="alert"></p>
+              </div>
+              <div class="field">
+                <label for="bk-pro">Profissional</label>
+                <select id="bk-pro" name="pro" required></select>
+                <p class="error" id="err-pro" role="alert"></p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="bk-date">Data</label>
+              <input type="date" id="bk-date" name="date" required />
+              <p class="hint" id="date-hint"></p>
+              <p class="error" id="err-date" role="alert"></p>
+            </div>
+
+            <fieldset class="field slots-field" id="slots-field">
+              <legend>Horário desejado</legend>
+              <div
+                class="slots"
+                id="slots"
+                role="radiogroup"
+                aria-label="Horários"
+              >
+                <p class="slots-empty">
+                  Escolha uma data para ver os horários.
+                </p>
+              </div>
+              <p class="error" id="err-time" role="alert"></p>
+            </fieldset>
+
+            <div class="field">
+              <label for="bk-notes"
+                >Observações <span class="opt">(opcional)</span></label
+              >
+              <textarea
+                id="bk-notes"
+                name="notes"
+                rows="2"
+                maxlength="160"
+                placeholder="Ex.: referência de corte, preferência de máquina…"
+              ></textarea>
+            </div>
+
+            <div class="summary" id="summary" aria-live="polite"></div>
+
+            <button type="submit" class="btn btn-gold btn-block">
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.38A9.93 9.93 0 1 0 12.04 2Zm0 18.1a8.1 8.1 0 0 1-4.13-1.13l-.3-.18-3.12.82.83-3.04-.2-.31a8.12 8.12 0 1 1 6.92 3.84Zm4.45-6.07c-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2a7.3 7.3 0 0 1-1.34-1.67c-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.81-.2-.47-.4-.41-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.02.4 1.37.5.58.18 1.1.16 1.51.1.46-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28Z"
+                />
+              </svg>
+              Enviar pedido pelo WhatsApp
+            </button>
+            <p class="form-foot" id="form-foot">
+              Você será levado ao WhatsApp para enviar a mensagem. Nada é
+              confirmado automaticamente.
+            </p>
+          </form>
+        </div>
+      </section>
+
+      <!-- GALERIA -->
+      <section
+        class="section gallery"
+        id="galeria"
+        aria-labelledby="galeria-titulo"
+      >
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow"><span class="eyebrow-num">05</span> Galeria</p>
+            <h2 id="galeria-titulo" class="section-title">
+              Cortes, barbas e <em>ambiente</em>
+            </h2>
+            <p class="section-sub">
+              Ilustrações temáticas geradas em código (sem fotografias de pessoas).
+            </p>
+          </header>
+          <div
+            class="filters reveal"
+            role="group"
+            aria-label="Filtrar galeria"
+            id="gallery-filters"
+          ></div>
+          <div class="gallery-grid" id="gallery-grid"></div>
+        </div>
+      </section>
+
+      <!-- DIFERENCIAIS -->
+      <section
+        class="section perks"
+        id="diferenciais"
+        aria-labelledby="dif-titulo"
+      >
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow">
+              <span class="eyebrow-num">06</span> Diferenciais
+            </p>
+            <h2 id="dif-titulo" class="section-title">
+              O jeito <em>BLACKSTEEL</em>
+            </h2>
+          </header>
+          <div class="perks-grid" id="perks-grid"></div>
+        </div>
+      </section>
+
+      <!-- LOCALIZAÇÃO E HORÁRIOS -->
+      <section
+        class="section contact"
+        id="contato"
+        aria-labelledby="contato-titulo"
+      >
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow"><span class="eyebrow-num">07</span> Contato</p>
+            <h2 id="contato-titulo" class="section-title">
+              Venha nos <em>visitar</em>
+            </h2>
+          </header>
+
+          <div class="contact-grid">
+            <div class="contact-card reveal">
+              <span class="badge-demo">Endereço demonstrativo</span>
+              <h3>Onde estamos</h3>
+              <address id="address-block"></address>
+              <p class="fine">
+                Este endereço é fictício e serve apenas para ilustrar o layout.
+                Substitua em <code>script.js</code> (objeto
+                <code>BUSINESS</code>).
+              </p>
+              <div class="contact-actions">
+                <a
+                  class="btn btn-gold"
+                  id="btn-maps"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Abrir no Google Maps</a
+                >
+                <a
+                  class="btn btn-ghost"
+                  id="btn-whats"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Chamar no WhatsApp</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-card reveal">
+              <div class="hours-head">
+                <h3>Horário de funcionamento</h3>
+                <span
+                  class="open-status"
+                  id="open-status"
+                  aria-live="polite"
+                ></span>
+              </div>
+              <table class="hours" id="hours-table">
+                <caption class="sr-only">
+                  Horários de funcionamento por dia da semana
+                </caption>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a
+            href="#inicio"
+            class="logo"
+            aria-label="BLACKSTEEL Barber Club — voltar ao topo"
+          >
+            <span class="logo-mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="30" height="30">
+                <path
+                  d="M8 5h9a5 5 0 0 1 2 9.5A5.5 5.5 0 0 1 17 27H8z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path d="M8 14.5h10" stroke="currentColor" stroke-width="2" />
+              </svg>
+            </span>
+            <span class="logo-text">BLACK<b>STEEL</b></span>
+          </a>
+          <p>
+            Barber Club. Estilo, precisão e uma experiência pensada para o homem
+            de hoje.
+          </p>
+          <ul class="socials" id="socials" aria-label="Redes sociais"></ul>
+        </div>
+
+        <nav aria-label="Rodapé — navegação">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#profissionais">Profissionais</a></li>
+            <li><a href="#agendar">Agendar horário</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h4>Serviços</h4>
+          <ul id="footer-services"></ul>
+        </div>
+
+        <div>
+          <h4>Horários</h4>
+          <ul class="footer-hours" id="footer-hours"></ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>
+          © <span id="year"></span> BLACKSTEEL Barber Club · Marca e conteúdo
+          fictícios, criados para fins de demonstração.
+        </p>
+        <p class="demo-disclaimer">
+          Projeto demonstrativo. Marca, pessoas, endereço e contatos são fictícios.
+        </p>
+        <p class="credit">
+          Site desenvolvido por
+          <a id="studio-link" href="#" target="_blank" rel="noopener noreferrer"
+            >Studio MV</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Visualização ampliada da galeria"
+      hidden
+    >
+      <button
+        class="lb-btn lb-close"
+        type="button"
+        aria-label="Fechar visualização"
+      >
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+          <path
+            d="M5 5l14 14M19 5L5 19"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            fill="none"
+          />
+        </svg>
+      </button>
+      <button class="lb-btn lb-prev" type="button" aria-label="Foto anterior">
+        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+          <path
+            d="M15 5l-7 7 7 7"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            fill="none"
+          />
+        </svg>
+      </button>
+      <button class="lb-btn lb-next" type="button" aria-label="Próxima foto">
+        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+          <path
+            d="M9 5l7 7-7 7"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            fill="none"
+          />
+        </svg>
+      </button>
+      <figure class="lb-figure">
+        <div id="lb-img" role="img" aria-label="" style="display:flex;align-items:center;justify-content:center;width:100%;height:auto;min-height:400px;background:#17181b;"></div>
+        <figcaption>
+          <span id="lb-caption"></span
+          ><span class="lb-count" id="lb-count"></span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <noscript
+      ><p class="noscript">
+        Para ver serviços, agenda e galeria, ative o JavaScript no navegador.
+      </p></noscript
+    >
+    <script src="script.js"></script>
+  </body>
+</html>
