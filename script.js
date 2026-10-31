@@ -943,8 +943,9 @@ function setupHeader() {
   menuToggle.addEventListener("click", () => {
     menu.classList.contains("is-open") ? closeMenu() : openMenu();
   });
-  menu.addEventListener("click", (e) => {
-    if (e.target.closest("a")) closeMenu();
+  menu.addEventListener("click", () => {
+    // Fecha o menu ao clicar em um link ou ao tocar no fundo/overlay (mobile e tablets)
+    closeMenu();
   });
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && menu.classList.contains("is-open")) {

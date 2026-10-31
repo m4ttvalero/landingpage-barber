@@ -1676,11 +1676,17 @@ body::before {
   }
   .main-nav {
     position: fixed;
-    inset: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     z-index: 110;
+    width: 100vw;
+    height: 100vh;
     flex-direction: column;
     justify-content: center;
     gap: 2.4rem;
+    overflow-y: auto;
     background: rgba(8, 8, 9, 0.98);
     backdrop-filter: blur(10px);
     opacity: 0;
